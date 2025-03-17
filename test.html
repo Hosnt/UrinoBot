@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock/Unlock Example</title>
+    <style>
+        .locked {
+            display: none; /* Hide content when locked */
+        }
+    </style>
+</head>
+<body>
+    <button id="lockButton">Lock Website</button>
+    <div id="content">This is the content of your website.</div>
+
+    <script>
+        let isLocked = false;
+
+        document.getElementById('lockButton').addEventListener('click', function() {
+            isLocked = !isLocked; // Toggle lock state
+            document.getElementById('content').classList.toggle('locked', isLocked);
+            this.textContent = isLocked ? 'Unlock Website' : 'Lock Website';
+        });
+    </script>
+</body>
+</html>

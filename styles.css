@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to right, #91D18B, #00C9FF);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+}
+input, button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+button {
+    background: rgba(255, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background: rgba(255, 0, 0, 0.7);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.sex-label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px 10px;
+}
